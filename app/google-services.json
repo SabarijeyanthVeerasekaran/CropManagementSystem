@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "101228629910",
+    "firebase_url": "https://cropmanagement-91ef4.firebaseio.com",
+    "project_id": "cropmanagement-91ef4",
+    "storage_bucket": "cropmanagement-91ef4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101228629910:android:607310fbc3892480c497b7",
+        "android_client_info": {
+          "package_name": "com.example.cropmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101228629910-uu7m5a2l7phat58k9265cbic5kgq2p26.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cropmanagement",
+            "certificate_hash": "3e0b55d3e2466d882327d1f38d32256bf616e03c"
+          }
+        },
+        {
+          "client_id": "101228629910-atd3je7lvl6h5nkuvhqf88i4tniafpnv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQccyHh3yosvH87ZAPz1RKh7Io5e5rx88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101228629910-atd3je7lvl6h5nkuvhqf88i4tniafpnv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

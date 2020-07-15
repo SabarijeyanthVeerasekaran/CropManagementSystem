@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".soilfragments.SoilFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/redsoil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red Soil" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/balcksoil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black Soil" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/lateritesoil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laterite Soil" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/coastalsoil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coastal Soil" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/checksoil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Soil" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="1200dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tablayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

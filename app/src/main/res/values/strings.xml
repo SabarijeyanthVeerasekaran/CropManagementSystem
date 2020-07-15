@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">CropManagement</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="hometitle">Home</string>
+    <string name="profiletitle">Profile</string>
+    <string name="gallerytitle">Gallery</string>
+    <string name="soilqualitytitle">Soil Quality</string>
+    <string name="diseasesprediction">Diseases Prediction</string>
+    <string name="harvestig">Harvesting</string>
+    <string name="coldstorage">Cold Storage</string>
+
+    <string-array name="districts">
+        <item>Choose District</item>
+        <item>chennai</item>
+        <item>coimbatore</item>
+        <item>cuddalore</item>
+        <item>dharmapuri</item>
+        <item>dindugal</item>
+        <item>erode</item>
+        <item>kancheepuram</item>
+        <item>madurai</item>
+        <item>nilgiris</item>
+        <item>perumballur</item>
+        <item>puthukottai</item>
+        <item>ramnathapuram</item>
+        <item>salem</item>
+        <item>theni</item>
+        <item>thiruvallur</item>
+        <item>tirunelveli</item>
+        <item>trichy</item>
+        <item>tuticorin</item>
+        <item>vellore</item>
+        <item>virudhunagar</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
