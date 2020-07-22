@@ -232,17 +232,17 @@ public class DiseasesFragment extends Fragment {
             Picasso.with(getActivity()).load(imageUri).into(d_diseasesimage);
         }
     }
-        private String getPathFromUri(Uri uri)
-        {
-            String[] projection={MediaStore.Images.Media.DATA};
-            CursorLoader loader=new CursorLoader(getActivity().getApplicationContext(),uri,projection,null,null,null);
-            Cursor cursor=loader.loadInBackground();
-            int column_index=cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
-            cursor.moveToFirst();
-            String result=cursor.getString(column_index);
-            cursor.close();
-            return result;
-        }
+    private String getPathFromUri(Uri uri)
+    {
+        String[] projection={MediaStore.Images.Media.DATA};
+        CursorLoader loader=new CursorLoader(getActivity().getApplicationContext(),uri,projection,null,null,null);
+        Cursor cursor=loader.loadInBackground();
+        int column_index=cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+        cursor.moveToFirst();
+        String result=cursor.getString(column_index);
+        cursor.close();
+        return result;
+    }
     public void onResume() {
         super.onResume();
         AppCompatActivity appCompatActivity=(AppCompatActivity)getActivity();

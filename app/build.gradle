@@ -1,15 +1,49 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.chaquo.python'
+
 
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "com.example.cropmanagement"
-        minSdkVersion 24
+        sourceSets
+                {
+                    main
+                            {
+                                python
+                                        {
+                                            srcDirs=["src/main/python"]
+                                        }
+                            }
+                }
+        minSdkVersion 22
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
+        ndk{
+            abiFilters "armeabi-v7a","x86"
+        }
+        python
+                {
+
+                    buildPython "C:\\Users\\Pradheep\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
+                   // buildPython "python3"
+
+
+                    }
+       python {
+           pip {
+               install "opencv-python"
+               install "pybase64"
+               install "pybase64"
+               install "pillow"
+
+
+
+           }
+       }
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -38,4 +72,8 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
     implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
     implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.amazonaws:aws-android-sdk-s3:2.6.31'
+    implementation 'com.amazonaws:aws-android-sdk-cognito:2.16.1'
+    implementation 'com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.16.12'
+    implementation 'org.jetbrains:annotations-java5:15.0'
 }

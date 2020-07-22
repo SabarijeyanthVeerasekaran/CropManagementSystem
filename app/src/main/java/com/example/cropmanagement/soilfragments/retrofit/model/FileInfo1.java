@@ -1,10 +1,8 @@
-package com.example.cropmanagement.diseasesfragment.retrofit.model;
+package com.example.cropmanagement.soilfragments.retrofit.model;
 
 import com.google.gson.annotations.SerializedName;
 
-import org.json.JSONObject;
-
-public class FileInfo {
+public class FileInfo1 {
 
 
 
